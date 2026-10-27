@@ -1,0 +1,7 @@
+create  index cluster_employe on employees (emp_name);
+cluster employees  using cluster_employe
+
+Select * from employees;
+
+insert into  employees values(110,'ram',12345,'mumbai');
+insert into  employees values(100,'ram',12345,'mumbai');
